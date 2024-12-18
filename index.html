@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Khione</title>
+	<link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -10,9 +11,9 @@
 <body>
 <div id="wrapper">  <!-- width: 100%; margin: 0 auto; -->
     <header id="header">
-        <div id="header-wrapper">  <!-- width : 1440px; padding : 112px 64px;  -->
+        <div class="headerWrapper">  
 			<div class="logo">
-				<img src="images/onlylogo_b.png" alt="logo">
+				<a href="index.html"><img src="images/onlylogo_b.png" alt="logo"></a>
 			</div>
 			<nav class="mainMenu">
 				<ul class="navi">
@@ -24,17 +25,19 @@
 			</nav>
 			<ul class="subMenu">
 				<li><a href="#">Sign In</a></li>
-				<li class="blueButton"><a href="#">Search Your Winter</a></li>
+				<li><a href="#">Search Your Winter</a></li>
 			</ul>
         </div>
     </header>
     <section id="hero">
-		<div id="hero-wrapper">
-			<h1>Experience the Serenity of Winter's Embrace</h1>
-			<p>
-				Step into a world where snowflakes dance and tranquility reigns.
-				Each image invites you to pause and reflect on the beauty of winter's gentle touch.
-			</p>
+		<div class="wrapper">  <!-- width : 1440px; padding : 112px 64px;  -->
+			<div class="heroText">
+				<h1>Experience the Serenity of Winter's Embrace</h1>
+				<p>
+					Step into a world where snowflakes dance and tranquility reigns.
+					Each image invites you to pause and reflect on the beauty of winter's gentle touch.
+				</p>
+			</div>
 		</div>
 		<div id="heroPic-wrapper">  <!-- 예외 wrapper -->
 			<div class="heroPicFlex">
@@ -49,11 +52,12 @@
 				<img src="images/mihai-surdu-1sIfxuVvO9w-unsplash.jpg" alt="heroImg">
 				<img src="images/noaa-8BoyeHOX4CI-unsplash.jpg" alt="heroImg">
 				<img src="images/matt-popovich--rNlq4IN_1k-unsplash.jpg" alt="heroImg">
+				<img src="images/elegantvisual.jpg" alt="heroImg">
 			</div>
 		</div>
     </section>
     <section id="features">
-        <div id="features-wrapper">
+        <div class="wrapper">
 			<div class="featuresText">
 				<h3>Discover the Tranquility of Snow with Our Selected Images.</h3>
 				<p>
@@ -64,46 +68,228 @@
 			</div>
 			<div class="featuresFlex">
 				<div class="featuresCard">
-					
+					<div class="cardImage">
+						<img src="images/curatedthematic.jpg" alt="cardImages">
+					</div>
+					<div class="cardText">
+						<h5>Curated Thematic Collections</h5>
+						<p>Explore our carefully curated galleries that celebrate the beauty of winter's landscapes.</p>
+					</div>
+				</div>
+				<div class="featuresCard">
+					<div class="cardImage">
+						<img src="images/elegantvisual.jpg" alt="cardImages">
+					</div>
+					<div class="cardText">
+						<h5>Elegant Visual Design</h5>
+						<p>Experience a clean, modern aesthetic that enhances your viewing pleasure.</p>
+					</div>
+				</div>
+				<div class="featuresCard">
+					<div class="cardImage">
+						<img src="images/interactive.jpg" alt="cardImages">
+					</div>
+					<div class="cardText">
+						<h5>Interactive Features</h5>
+						<p>Enjoy subtle hover effects that enhance your interaction without disrupting the calm atmosphere.</p>
+					</div>
+				</div>
+				<div class="featuresCard">
+					<div class="cardImage">
+						<img src="images/snsconnect.jpg" alt="cardImages">
+					</div>
+					<div class="cardText">
+						<h5>Social Media Connectivity</h5>
+						<p>Connect with us on social media to stay updated on new collections and features.</p>
+					</div>
 				</div>
 			</div>
         </div>
     </section>
     <section id="firstSnow">
-        <div id="firstSnow-wrapper">
-
+        <div class="wrapper">
+			<div class="firstSnowImg">
+				<img src="images/aaron-burden-5p_hbvdcEvo-unsplash.jpg" alt="firstSnow">
+			</div>
+			<div class="firstSnowText">
+				<h6>Awakening</h6>
+				<h2>The Magic of First Snowfall Unveiled</h2>
+				<p>
+					Experience the enchanting transformation as the world dons its first snow.
+					Each flake whispers a promise of renewal and beauty, inviting you to pause and reflect.
+				</p>
+				<a href="#" class="ghostButton">Explore</a>
+			</div>
         </div>
     </section>
     <section id="urbanWinter">
-        <div id="urbanWinter-wrapper">
-
+        <div class="wrapper">
+			<div class="urbanWinterText">
+				<h6>Serenity</h6>
+				<h2>Urban Winter Awaits</h2>
+				<p>Where city life meets winter's gentle embrace.</p>
+			</div>
+			<div class="urbanFlex">
+				<div class="urbanCard">
+					<div class="UrbanImg rightUrbanImg">
+						<img src="images/marc-ruaix-pV9_u0zDk4E-unsplash.jpg" alt="urbanImages">
+					</div>
+					<div class="urbanDescription leftUrbanDescription">
+						<h6>Tranquility</h6>
+						<h3>Experience the City in Snow</h3>
+						<p>
+							Amidst the urban rush, a soft snowfall transforms the landscape.
+							Witness the beauty of winter as it blankets the city in calm.
+						</p>
+						<a href="#" class="viewMore">View</a>
+					</div>
+				</div>
+				<div class="urbanCard">
+					<div class="UrbanImg leftUrbanImg">
+						<img src="images/noaa-uAY90XrjSE8-unsplash.jpg" alt="urbanImages">
+					</div>
+					<div class="urbanDescription rightUrbanDescription">
+						<h6>Harmony</h6>
+						<h3>The City Under a Snowy Veil</h3>
+						<p>
+							Discover the unique charm that winter brings to urban life.
+							Each flake adds a touch of magic to the everyday hustle.
+						</p>
+						<a href="#" class="viewMore">View</a>
+					</div>
+				</div>
+				<div class="urbanCard">
+					<div class="UrbanImg rightUrbanImg">
+						<img src="images/simon-berger-OtsInMfOk48-unsplash.jpg" alt="urbanImages">
+					</div>
+					<div class="urbanDescription leftUrbanDescription">
+						<h6>Stillness</h6>
+						<h3>Winter's Whisper in the City</h3>
+						<p>
+							Let the serene snowfall guide you through the urban landscape.
+							Experience the juxtaposition of lively streets and tranquil moments.
+						</p>
+						<a href="#" class="viewMore">View</a>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
-  <section id="natureSnow">
-      <div id="natureSnow-wrapper">
-
-      </div>
-  </section>
-  <section id="blackWhite">
-      <div id="blackWhite-wrapper">
-
-      </div>
-  </section>
-  <section id="testimonial">
-      <div id="testimonial-wrapper">
-
-      </div>
-  </section>
-  <section id="joinCommunity">
-      <div id="joinCommunity-wrapper">
-
-      </div>
-  </section>
-  <footer id="footer">
-      <div id="footer-wrapper">
-
-      </div>
-  </footer>
+	<section id="natureSnow">
+		<div class="wrapper">
+			<div class="natureSnowText">
+				<div class="leftNatureSnowText">
+					<h6>Nature</h6>
+					<h2>Experience the Serenity of Nature’s Snow</h2>
+				</div>
+				<div class="rightNatureSnowText">
+					<p>
+						Step into a world where nature's beauty is amplified by a blanket of snow.
+						Each flake tells a story, transforming the landscape into a serene masterpiece.
+						Let the tranquility of untouched snow inspire your imagination.
+					</p>
+					<a href="#" class="ghostButton">Explore</a>
+				</div>
+			</div>
+			<div class="natureSnowImg">
+				<img src="images/ian-schneider-dqMxDqdhg_4-unsplash.jpg" alt="natureImage">
+			</div>
+		</div>
+	</section>
+	<section id="blackWhite">
+		<div class="wrapper">
+			<div class="blackWhiteText">
+				<h6>Timeless</h6>
+				<h2>Monochrome Magic: Winter's Light and Shadow</h2>
+				<p>
+					Experience the striking beauty of winter captured in black and white.
+					Each image tells a story of serenity and contrast, inviting you to explore the quiet elegance of the season.
+				</p>
+				<a href="#" class="ghostButton">Explore</a>
+			</div>
+			<div class="blackWhiteImg">
+				<img src="images/matt-popovich--rNlq4IN_1k-unsplash.jpg" alt="blackWhiteImage">
+			</div>
+		</div>
+	</section>
+	<section id="testimonial">
+		<div class="wrapper">
+			<div class="testimonialContentWrap">
+				<div class="tLogo">
+					<img src="images/onlylogo_b.png" alt="logo">
+				</div>
+				<h4>"Each image captures the serene beauty of winter, evoking a sense of peace that lingers long after viewing."</h4>
+				<div class="avatarImgWrap">
+					<img src="images/lilat.jpg" alt="Lila">
+				</div>
+				<h6>Lila Thompson</h6>
+				<p>Photographer, Freelance</p>
+			</div>
+		</div>
+	</section>
+	<section id="joinCommunity">
+		<div class="wrapper">
+			<div class="communityImgWrap">
+				<img src="images/steven-wright-cbOgtT3iLtM-unsplash.jpg" alt="bg">
+				<div class="darkerImg"></div>
+			</div>
+			<div class="communityText">
+				<h2>Join the Khione Community</h2>
+				<p>Stay updated with our latest snow-themed collections and exclusive content delivered straight to your inbox.</p>
+				<form name="eMail" action="" method="get">
+					<input type="text" name="eMailAddress" placeholder="Your Email Here">
+					<button type="submit">Join Us</button>
+				</form>
+				<p class="termsAgree">
+					By clicking Join Us, you agree to our <a href="#">Terms and Conditions</a>.
+				</p>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footerTop">
+				<div class="khioneInfo">
+					<div class="address">
+						<h6>Address:</h6>
+						<p>1 Lakeshore Farmington CT 06032-1225 USA</p>
+					</div>
+					<div class="contact">
+						<h6>Contact:</h6>
+						<p><a href="#">1800 123 4567</a></p>
+						<p><a href="#">info@khione.com</a></p>
+					</div>
+					<ul class="sns">
+						<li><a href="#"><img src="images/facebook.png" alt="sns"></a></li>
+						<li><a href="#"><img src="images/insta.png" alt="sns"></a></li>
+						<li><a href="#"><img src="images/X.png" alt="sns"></a></li>
+						<li><a href="#"><img src="images/LinkedIn.png" alt="sns"></a></li>
+						<li><a href="#"><img src="images/Youtube.png" alt="sns"></a></li>
+					</ul>
+				</div>
+				<ul class="footerMenuLeft">
+					<li><a href="#">First Snow</a></li>
+					<li><a href="#">Urban Winter</a></li>
+					<li><a href="#">Nature's Snow</a></li>
+					<li><a href="#">Black & White</a></li>
+				</ul>
+				<ul class="footerMenuRight">
+					<li><a href="#">Support Center</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Feedback</a></li>
+				</ul>
+			</div>
+			<div class="footerBottom">
+				<p class="copy">© 2024 Khione. All rights reserved.</p>
+				<ul class="policyMenu">
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Cookies Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </div>
 </body>
 </html>

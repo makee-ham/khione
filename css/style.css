@@ -85,6 +85,7 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 	display : block;
 	padding : 8px 20px;
 	font-size : 16px;
+	line-height: 150%;
 }
 .subMenu > li:last-child {
 	background-color : #cdeaf7;
@@ -167,6 +168,7 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 	width : 304px;
 	height : 350px;
 	border : 1px solid #e5e5e5;
+	background-color : #fff;
 }
 .cardImage {
 	width : 304px;
@@ -189,3 +191,149 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 .cardText > p {
 	font-size : 14px; 
 }
+/* first snow section */
+#firstSnow {
+	width : 1440px;
+	height : 864px;
+	margin : 0 auto;
+}
+.firstSnowImg {
+	width : 616px;
+	height : 640px;
+	float : left;
+}
+.firstSnowImg img {
+	width : 616px;
+	height : 640px;
+	object-fit : cover;
+	object-position: 50% 100%;
+}
+.firstSnowText {
+	width : 616px;
+	height : 341px;
+	margin-top : 149.5px;
+	float : right;
+	position : relative;
+}
+.firstSnowText h6 { line-height : 150%; }
+.firstSnowText h2 {
+	margin-top : 16px;
+	margin-bottom : 24px;
+	line-height : 120%;
+}
+.firstSnowText p {
+	line-height : 150%;
+}
+/* 고스트 버튼 시작 */
+.ghostButton {
+	font-size : 16px;
+	color : #333;
+	line-height : 150%;
+	padding : 12px 24px;
+	border : 1px solid #333;
+}
+.ghostButton:hover {
+	background-color : #333;
+	color : #fff;
+}
+/* 고스트 버튼 끝 */
+.firstSnowText > a {
+	position : absolute;
+	bottom : 0;
+}
+/* urban winter */
+#urbanWinter {
+	width : 100%;
+	height : 2501px;
+	background-color : #f8f9fa;
+}
+.urbanWinterText {
+	width : 768px;
+	height : 149px;
+	margin : 0 auto 80px;
+	text-align : center;
+}
+.urbanWinterText h6 {
+	line-height : 150%;
+}
+.urbanWinterText h2 {
+	line-height : 120%;
+	margin-top : 16px;
+	margin-bottom : 24px;
+}
+.urbanWinterText p {
+	line-height : 150%;
+}
+.urbanFlex {
+	width : 1312px;
+	height : 2048px;
+	display : flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+.urbanCard {
+	width : 1312px;
+	height : 640px;
+	overflow : hidden;
+	background-color : #fff;
+	box-shadow : 0 12px 16px -4px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+	cursor : pointer;
+	border: 1px solid #e5e5e5;
+	position : relative;
+	margin-bottom : 64px;
+}
+.urbanCard:hover > .urbanImg > img { transform: scale(1.05); }
+.urbanImg {
+	width : 656px;
+	height : 640px;
+	overflow : hidden;
+	position : absolute;
+}
+.urbanImg img {
+	width : 656px;
+	height : 640px;
+	object-fit: cover;
+	transition : all 0.5s;
+}
+.urbanDescription {
+	width : 656px;
+	height : 640px;
+	padding : 216px 48px;
+	position : absolute;
+}
+.rightUrbanImg { right : 0; }
+.leftUrbanImg { left : 0; }
+.rightUrbanDescription { right : 0; }
+.leftUrbanDescription { left : 0; }
+.urbanDescription h6 {
+	line-height : 150%;
+}
+.urbanDescription h3 {
+	line-height : 120%;
+	margin : 8px 0 24px;
+}
+.urbanDescription p {
+	line-height : 150%;
+	font-size : 16px;
+	margin-bottom : 32px;
+}
+.urbanDescription a {
+	line-height : 150%;
+	font-size : 16px;
+}
+.urbanDescription a:after {
+	content : "";
+	display : inline-block;
+	width : 24px;
+	height : 24px;
+	margin-left : 8px;
+	background : url(../images/goicon.png) no-repeat center;
+	background-size : 8px 12px;
+	position : relative;
+	top : 7px;
+}
+.urbanDescription a:hover a:after{
+	background : url(../images/goicon_hover.png) no-repeat center;
+}
+/* 질문 1: hero 섹션의 사진 배치 */
+/* 질문 2 : > 아이콘 호버 시 색 변경 방법 */

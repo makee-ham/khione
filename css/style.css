@@ -553,6 +553,7 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 	font-size : 15px;
 	background-color : #cdeaf7;
 	float : right;
+	cursor : pointer;
 }
 .termsAgree {
 	line-height : 150%;

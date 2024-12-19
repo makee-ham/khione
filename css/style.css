@@ -555,6 +555,9 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 	float : right;
 	cursor : pointer;
 }
+.communityText button:hover {
+	background-color : #a0d1e6;
+}
 .termsAgree {
 	line-height : 150%;
 	font-size : 12px;

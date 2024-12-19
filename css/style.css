@@ -535,6 +535,7 @@ h6 { font-family : "Playfair Display", serif; font-size : 16px; color : #222; }
 	border : 1px solid #fff;
 	background-color : transparent;
 	float : left;
+	outline : none;
 }
 .communityText input::placeholder {
 	color : #fff;
